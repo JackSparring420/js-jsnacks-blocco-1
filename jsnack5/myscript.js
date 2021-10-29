@@ -6,9 +6,8 @@ let numeri = [];
 let numeriDispari= [];
 
 for(let i = 0; i < 6; i++){
-
     numeri.push(parseInt(prompt("inserisci un numero: ")));
-
+    // se è dispari inseriscilo nell’array.
     if(numeri[i] % 2 != 0){
         numeriDispari[i] = numeri[i];
     }

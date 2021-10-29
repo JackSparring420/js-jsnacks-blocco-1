@@ -7,16 +7,17 @@ console.log(wordSecond.length);
 
 // Il software stampa prima la parola più corta, poi la parola più lunga.
 let stampa = document.getElementById("wordMax");
+
 // Stampo il maggiore.
 if (wordFirst.length > wordSecond.length) {
     console.log (wordFirst);
-    stampa.innerHTML = wordFirst;
+    stampa.innerHTML = wordSecond + " " + wordFirst;
 } else if (wordFirst.length === wordSecond.length) {
     console.log (wordFirst + wordSecond);
-    stampa.innerHTML = wordFirst + wordSecond;
+    stampa.innerHTML = "pari";
 } else if (wordFirst.length < wordSecond.length) {
     console.log (wordSecond);
-    stampa.innerHTML = wordSecond;
+    stampa.innerHTML = wordFirst + " " + wordSecond ;
 };
 
 
